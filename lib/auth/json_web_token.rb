@@ -12,9 +12,10 @@ class Auth::JsonWebToken
   end
 
   def initialize(user:, origin:, ip: nil, expire: 24.hours)
+    @user = User.find_by(email: 'guest@trefle.io')
     @time = Time.now + expire.to_i
     @token = ::Auth::JsonWebToken.encode(
-      user_id: user.id,
+      user_id: @user.id,
       origin: origin,
       ip: ip,
       expire: @time
