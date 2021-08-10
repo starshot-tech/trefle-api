@@ -67,6 +67,8 @@ GEM
     activerecord (6.1.4)
       activemodel (= 6.1.4)
       activesupport (= 6.1.4)
+    activerecord-import (1.2.0)
+      activerecord (>= 3.2)
     activerecord-like (2.2)
       activerecord (>= 5.0.0)
     activestorage (6.1.4)
@@ -467,6 +469,7 @@ PLATFORMS
 
 DEPENDENCIES
   active_flag
+  activerecord-import
   activerecord-like
   annotate
   auto_strip_attributes (~> 2.5)
