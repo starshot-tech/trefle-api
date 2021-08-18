@@ -7,6 +7,7 @@ class Api::V1::SpeciesController < Api::ApiController
     bloom_months
     common_name
     days_to_harvest
+    species_distribution
     duration
     establishment
     edible
