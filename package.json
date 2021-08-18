@@ -4,7 +4,7 @@
   "dependencies": {
     "@babel/preset-react": "^7.10.4",
     "@rails/ujs": "^6.0.3-1",
-    "@rails/webpacker": "5.1.1",
+    "@rails/webpacker": "^6.0.0-beta.7",
     "autobind-decorator": "^2.4.0",
     "axios": "^0.21.1",
     "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
@@ -24,9 +24,18 @@
     "react-modal": "^3.11.2",
     "react-select": "^3.1.0",
     "react-syntax-highlighter": "^12.2.1",
-    "swagger-ui": "^3.26.2"
+    "swagger-ui": "^3.26.2",
+    "webpack": "^5.11.0",
+    "webpack-cli": "^4.2.0"
   },
   "devDependencies": {
-    "webpack-dev-server": "^3.11.0"
-  }
+    "@webpack-cli/serve": "^1.5.1",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "babel": {
+    "presets": ["./node_modules/@rails/webpacker/package/babel/preset.js"]
+  },
+  "browserslist": [
+    "defaults"
+  ]
 }

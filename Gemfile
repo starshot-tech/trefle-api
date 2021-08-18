@@ -7,7 +7,7 @@ git_source(:github) {|repo| "https://github.com/#{repo}.git" }
 # gem 'jquery-rails'
 gem 'rails', '>= 6.0.3.2'
 
-gem 'webpacker', '>= 5.x'
+gem 'webpacker', '~> 5.0'
 
 # Use postgresql as the database for Active Record
 gem 'pg', '>= 0.18', '< 2.0'
@@ -100,6 +100,9 @@ gem 'memory_profiler'
 
 # captcha"
 gem "recaptcha"
+
+# import sql dump file
+gem 'activerecord-import'
 
 
 group :development, :test do
